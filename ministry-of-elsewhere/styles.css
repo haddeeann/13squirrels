@@ -343,7 +343,7 @@ h3 { font-size: 21px; line-height: 1.2; }
 .footer-inner span { font-size: 12px; }
 .footer-inner nav { display: flex; flex-wrap: wrap; gap: 24px; font-size: 13px; }
 
-@media (max-width: 840px) {
+@media (max-width: 980px) {
   .hero-layout, .promise-grid, .workspace-card, .download-card, .notes-grid { grid-template-columns: 1fr; gap: 46px; }
   .ministry-hero { min-height: 0; }
   .hero-layout { padding-top: 80px; }
