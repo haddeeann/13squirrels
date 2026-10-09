@@ -225,6 +225,108 @@ a {
   padding: 56px 0;
 }
 
+/* Studio product index */
+.eyebrow {
+  margin-bottom: 8px;
+  color: var(--brand);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.studio-products h2 {
+  max-width: 620px;
+  margin-bottom: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: #2C2A26;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(44, 42, 38, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px rgba(44, 42, 38, 0.12);
+}
+
+.product-card-ministry {
+  background: linear-gradient(145deg, #f5efe3 0%, #dce6e9 100%);
+}
+
+.product-card-vela {
+  background: linear-gradient(145deg, #f4f2ed 0%, #e1f5ee 100%);
+}
+
+.product-card-icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+  border-radius: 17px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(13, 25, 35, 0.17);
+}
+
+.product-card-squirrel-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card-squirrel {
+  width: 360%;
+  height: auto;
+  position: absolute;
+  left: -69%;
+  top: -16%;
+}
+
+.product-card-copy {
+  display: grid;
+  gap: 5px;
+}
+
+.product-card-copy strong {
+  font-size: 20px;
+}
+
+.product-card-copy span {
+  color: #5C5A55;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.product-card-copy small {
+  color: #615E58;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.product-card-arrow {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 24px;
+}
+
 /* Acorn dividers */
 .divider {
   display: flex;
@@ -661,13 +763,21 @@ a {
 
   .card,
   .feature,
+  .product-card,
   .signup-form button {
     transition: none;
   }
 
   .card:hover,
+  .product-card:hover,
   .signup-form button:hover {
     transform: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .product-grid {
+    grid-template-columns: 1fr;
   }
 }
 
