@@ -369,3 +369,11 @@ h3 { font-size: 21px; line-height: 1.2; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+.workspace-screenshot { margin: 0; background: #202321; }
+.workspace-screenshot img { display: block; width: 100%; height: auto; }
+.workspace-screenshot figcaption { padding: 12px 16px; color: #c6d2c8; font-size: 12px; line-height: 1.5; }
+.character-section { padding: 20px 0 100px; }
+.character-section p:not(.overline) { max-width: 760px; line-height: 1.7; }
+.character-screenshot { display: block; width: min(100%, 1000px); height: auto; margin: 30px auto 0; border: 1px solid #b9b7ac; border-radius: 12px; box-shadow: 0 20px 60px #10171c1a; }
+.release-notes { max-width: 600px; color: #d8e2dc; font-size: 15px; line-height: 1.65; }

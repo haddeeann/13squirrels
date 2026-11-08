@@ -1,22 +1,25 @@
 # Ministry of Elsewhere downloads
 
-`Ministry-of-Elsewhere-0.8.0-Beta-1-arm64.dmg` is the first development-preview
-DMG. It was built from `haddeeann/two-hundred-crappy-words` commit `f415c7e` for
-Apple Silicon and macOS 13 or later.
+Current development preview: `Ministry-of-Elsewhere-0.8.1-Preview-2-arm64.dmg`, published November 8, 2026.
+Version 0.8.1 / macOS build 2, Apple Silicon, macOS 13 or later.
+Built from app source revision `c3257bb4e418b3661b8f947013166c120c2a7933`.
 
-The contained application is ad-hoc signed and its signature verifies locally. It
-is not signed with a Developer ID certificate and is not Apple-notarized. The
-product page must keep that distinction visible until a verified release replaces
-this file.
+This update includes selected writing → character information, the startup project
+chooser and File → Open Recent, the Characters tools section, and toolbar wrapping.
+Screenshots use a fictional demonstration project.
 
-Before deployment, verify the artifact with:
+The contained app is ad-hoc signed, with its signature and bundle version verified
+inside the read-only mounted DMG. It is not Developer ID signed or notarized.
+The product page retains the existing development-preview installation guidance.
+
+Verify with:
 
 ```sh
-shasum -a 256 -c Ministry-of-Elsewhere-0.8.0-Beta-1-arm64.dmg.sha256.txt
+shasum -a 256 -c Ministry-of-Elsewhere-0.8.1-Preview-2-arm64.dmg.sha256.txt
 ```
 
-Expected SHA-256:
+SHA-256: `ce4cbd663d13899ca3823cccb2bc59b884061133a462384986eaed02fcefe14a`
+Size: 6,975,639 bytes.
 
-```text
-ff646eca2f1f7413079e8bc970682d5053c301295e6594a3c6fb82d252a7f76f
-```
+The older 0.8.0 Beta 1 file remains available for existing links; it is superseded
+by this preview. No automatic updater is shipped.
