@@ -3,231 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f0e2">
   <title>13 Squirrels Studio — Tools for brains like ours</title>
   <meta name="description" content="13 Squirrels Studio makes humane tools for daily life and creative work, including Vela and Ministry of Elsewhere.">
   <meta property="og:title" content="13 Squirrels Studio — Tools for brains like ours">
   <meta property="og:description" content="Meet Vela and Ministry of Elsewhere: thoughtful software built for the ways our brains actually work.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://13squirrels.netlify.app">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://13squirrels.netlify.app">
+  <meta property="og:url" content="https://13squirrels.netlify.app/">
+  <link rel="canonical" href="https://13squirrels.netlify.app/">
+  <link rel="icon" href="assets/studio-acorn.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "13 Squirrels Studio",
-    "url": "https://13squirrels.netlify.app",
+    "url": "https://13squirrels.netlify.app/",
     "description": "A small software studio building humane tools for daily life and creative work."
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="hero" id="top">
-    <div class="container hero-inner">
-      <div class="hero-squirrel">
-        <img src="assets/dr_acorn.webp"
-             alt="Dr. Acorn, a squirrel in a lab coat and safety goggles — lead researcher at 13 Squirrels Studio"
-             class="hero-squirrel-img" />
+  <header class="site-header">
+    <nav class="container site-nav" aria-label="Main navigation">
+      <a class="studio-brand" href="./" aria-current="page"><img src="assets/studio-acorn.svg" width="34" height="34" alt=""> 13 Squirrels Studio</a>
+      <div class="nav-links">
+        <a href="#products">Our apps</a>
+        <a href="#about">Our story</a>
       </div>
-      <div class="hero-text">
-        <p class="wordmark">13 Squirrels Studio</p>
-        <h1 class="tagline">We build tools for brains like ours.</h1>
-        <p class="hero-copy">
-          13 squirrels in a lab coat pretending to be a scientist — that's how our
-          founder described their brain before learning they had ADHD. We started
-          this studio because the tools we needed didn't exist. So we're building them.
-        </p>
-      </div>
-    </div>
-    <a class="scroll-indicator" href="#products" aria-label="Scroll to explore our products">
-      <span class="chevron"></span>
-    </a>
+    </nav>
   </header>
 
   <main id="main">
+    <section class="container studio-hero" aria-labelledby="studio-heading">
+      <div>
+        <p class="eyebrow hero-label">An independent software studio</p>
+        <h1 id="studio-heading">We build tools for <em>brains like ours.</em></h1>
+        <p class="hero-copy">A calendar that makes room for real life. A writing studio for stories that won’t fit in one document. Made by a small studio with a lot going on upstairs.</p>
+        <a class="studio-button" href="#products">Meet our apps <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="specimen">
+        <div class="specimen-heading eyebrow"><span>From the lab</span><span>Fig. 01</span></div>
+        <div class="specimen-photo">
+          <img src="assets/dr_acorn.webp" alt="Dr. Acorn, a squirrel wearing a lab coat and safety goggles">
+        </div>
+        <figcaption><strong>Dr. Acorn</strong><span class="eyebrow">Lead researcher</span></figcaption>
+      </figure>
+    </section>
+
     <section class="section studio-products" id="products" aria-labelledby="products-heading">
       <div class="container">
-        <p class="eyebrow">From the studio</p>
-        <h2 id="products-heading">Two tools for making room for what matters.</h2>
+        <p class="eyebrow section-label">01 <span> / </span> The app shelf</p>
+        <h2 id="products-heading">What we’re building</h2>
         <div class="product-grid">
-          <a class="product-card product-card-ministry" href="ministry-of-elsewhere/">
-            <img src="assets/ministry-of-elsewhere-icon.png" alt="" class="product-card-icon">
-            <span class="product-card-copy">
-              <strong>Ministry of Elsewhere</strong>
-              <span>Write a little every day. Build something enormous.</span>
-              <small>Beta for Apple Silicon Mac</small>
-            </span>
-            <span class="product-card-arrow" aria-hidden="true">→</span>
-          </a>
-          <a class="product-card product-card-vela" href="#vela">
-            <span class="product-card-icon product-card-squirrel-wrap" aria-hidden="true">
-              <img src="assets/dr_acorn.webp" alt="" class="product-card-squirrel">
-            </span>
-            <span class="product-card-copy">
-              <strong>Vela</strong>
-              <span>A calendar for how your brain actually works.</span>
-              <small>Coming soon to Android</small>
-            </span>
-            <span class="product-card-arrow" aria-hidden="true">↓</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider" aria-hidden="true">
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-    </div>
-
-    <section class="section" id="vela" aria-labelledby="vela-heading">
-      <div class="container">
-        <h2 id="vela-heading">Meet Vela</h2>
-        <p class="subheading">A calendar for how your brain actually works.</p>
-        <div class="vela-accent">
-          <img src="assets/story.webp"
-               alt="A squirrel scientist examining a glowing beaker"
-               class="vela-accent-img"
-               loading="lazy" />
-        </div>
-        <p>
-          Most calendars assume you know when everything happens. Vela assumes
-          you don't — and that's okay.
-        </p>
-        <p>
-          Capture first, schedule later. Brain dump your thoughts, then organize
-          them when you're ready. No forced dates, no required fields, no friction.
-        </p>
-        <p>
-          Built for the way ADHD brains experience time — not the way productivity
-          apps think they should.
-        </p>
-      </div>
-    </section>
-
-    <div class="divider" aria-hidden="true">
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-    </div>
-
-    <section class="section" id="pillars" aria-labelledby="pillars-heading">
-      <div class="container">
-        <h2 id="pillars-heading" class="visually-hidden">The three building blocks</h2>
-        <div class="cards">
-          <article class="card card-event">
-            <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="4" width="18" height="17" rx="2"></rect>
-                <line x1="3" y1="9" x2="21" y2="9"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-              </svg>
-            </span>
-            <h3>Events</h3>
-            <p>Appointments and commitments with a time and a place. Vela makes sure you actually notice them.</p>
+          <article id="vela" class="product-card product-card-vela">
+            <div class="product-top">
+              <img src="assets/vela-icon.png" width="72" height="72" alt="">
+              <span class="product-status">Android beta</span>
+            </div>
+            <h3><a href="vela/">Vela<span class="product-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>A calendar for how your brain actually works. Get the thought out now and find time for it later.</p>
           </article>
-
-          <article class="card card-task">
-            <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </span>
-            <h3>Tasks</h3>
-            <p>Things to do — with or without a deadline. Capture them now, schedule them when you're ready.</p>
-          </article>
-
-          <article class="card card-anchor">
-            <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M6.5 8.5a3.5 3.5 0 1 1 3 5.4 3.5 3.5 0 1 0 3 -5.4 3.5 3.5 0 0 0 -6 0z"></path>
-              </svg>
-            </span>
-            <h3>Anchors</h3>
-            <p>The daily patterns that hold your life together — sleep, meals, workouts. Vela builds your day around them.</p>
+          <article class="product-card product-card-ministry">
+            <div class="product-top">
+              <img src="assets/ministry-of-elsewhere-icon.png" width="72" height="72" alt="">
+              <span class="product-status">Apple Silicon Mac</span>
+            </div>
+            <h3><a href="ministry-of-elsewhere/">Ministry of Elsewhere<span class="product-arrow" aria-hidden="true">↗</span></a></h3>
+            <p>A writing studio for enormous worlds. Write a little every day and keep your drafts and lore together.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <div class="divider" aria-hidden="true">
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-      <svg class="acorn" viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-    </div>
-
-    <section class="section" id="features" aria-labelledby="features-heading">
-      <div class="container">
-        <h2 id="features-heading">What makes Vela different<span class="features-accent">
-          <img src="assets/the_lab.webp"
-               alt="Purple chemical vapor rising from a laboratory flask"
-               class="features-accent-img"
-               loading="lazy" /></span></h2>
-        <ul class="feature-list">
-          <li class="feature">
-            <h3><span class="feature-icon" aria-hidden="true">🧠</span>Brain Dump Capture</h3>
-            <p>Speak or type your thoughts. No dates required. Schedule them when you're ready.</p>
-          </li>
-          <li class="feature">
-            <h3><span class="feature-icon" aria-hidden="true">🔔</span>Full-Screen Alarms</h3>
-            <p>Not a polite notification you'll swipe away. Vela demands your attention when it matters.</p>
-          </li>
-          <li class="feature">
-            <h3><span class="feature-icon" aria-hidden="true">🌙</span>Sleep-Aware Timeline</h3>
-            <p>Set a sleep anchor and your daily view collapses those hours automatically. Your calendar reflects your actual life.</p>
-          </li>
-          <li class="feature">
-            <h3><span class="feature-icon" aria-hidden="true">⚡</span>Quick Add with Natural Language</h3>
-            <p>Type "dentist Thursday at 2pm" and Vela understands. Title, date, time — parsed and pre-filled.</p>
-          </li>
-          <li class="feature">
-            <h3><span class="feature-icon" aria-hidden="true">🐿️</span>Designed for ADHD</h3>
-            <p>Calm colors, meaningful structure, zero unnecessary friction. Every design decision filtered through one question: does this help an ADHD brain?</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section cta-section" id="waitlist" aria-labelledby="cta-heading">
-      <div class="container">
-        <h2 id="cta-heading">Coming soon to Android</h2>
-        <p>
-          Vela is in beta testing. We're building in public and shipping fast —
-          because 13 squirrels don't sit still for long.
-        </p>
-        <form class="signup-form" method="POST" action="#">
-          <label class="visually-hidden" for="email">Email address</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="your@email.com"
-            autocomplete="email"
-            required
-          >
-          <button type="submit">
-            <svg class="btn-acorn" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M3 6 C3 2.5 13 2.5 13 6 Z"/><path d="M4.5 6 C4.5 13.5 11.5 13.5 11.5 6 Z"/></svg>
-            Join the waitlist
-          </button>
-        </form>
-        <p class="form-note">No spam. Just launch updates and the occasional squirrel joke.</p>
+    <section class="section studio-about" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div>
+          <p class="eyebrow section-label">02 <span> / </span> The origin story</p>
+          <h2 id="about-heading">Why 13 squirrels?</h2>
+        </div>
+        <div class="about-copy">
+          <blockquote>“13 squirrels in a lab coat pretending to be a scientist.”</blockquote>
+          <p>That’s how our founder described their brain before learning they had ADHD. We started this studio because the tools we needed didn’t exist. So we’re building them.</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-copy">© 2026 13 Squirrels Studio</p>
-      <p class="footer-links">
+  <footer class="footer studio-footer">
+    <div class="container footer-layout">
+      <div>
+        <p class="footer-copy">© 2026 13 Squirrels Studio</p>
+        <p class="footer-tagline">Built with ADHD, for ADHD.</p>
+      </div>
+      <div class="footer-links">
         <a href="privacy.html">Privacy</a>
-        <span aria-hidden="true">|</span>
         <a href="mailto:hello@13squirrels.com">Contact</a>
-      </p>
-      <p class="footer-tagline"><span class="footer-squirrel"><img src="assets/dr_acorn.webp" alt="" class="footer-squirrel-img" aria-hidden="true" loading="lazy" /></span>Built with ADHD, for ADHD.</p>
+      </div>
     </div>
   </footer>
 </body>
